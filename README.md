@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+# Resume Website 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a personal resume website built using modern web technologies including React, TypeScript, Tailwind CSS, and Vite.
 
-Currently, two official plugins are available:
+## Table of Contents 📑
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Scripts](#scripts)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Features ✨
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Responsive design
+- Interactive UI components
+- Integration with social media profiles
+- Easy to customize and extend
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used 🛠️
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **Vite**: A fast build tool and development server.
+
+## Getting Started 🚀
+
+To get a local copy up and running, follow these steps:
+
+### Prerequisites 📋
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation 💻
+
+1. Clone the repository:
+
+```sh
+git clone https://github.com/yusufanilyazici/resume-website.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Navigate to the project directory:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+cd resume-website
 ```
-# yazici-cv
-# yazici-cv
-# yazici-cv
-# yazici-cv
+
+3. Install dependencies:
+
+```sh
+npm install
+```
+
+or
+
+```sh
+yarn install
+```
+
+### Running the Development Server 🏃
+
+To start the development server, run:
+
+```sh
+npm run dev
+```
+
+or
+
+```sh
+yarn dev
+```
+
+## Scripts 📜
+
+- `dev`: Starts the development server.
+- `build`: Builds the project for production.
+- `lint`: Runs ESLint to check for linting errors.
+- `preview`: Previews the production build.
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
