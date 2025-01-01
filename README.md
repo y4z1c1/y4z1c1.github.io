@@ -49,3 +49,4 @@ export default tseslint.config({
 })
 ```
 # yazici-cv
+# yazici-cv
