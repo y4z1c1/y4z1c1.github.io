@@ -1,7 +1,7 @@
 import './index.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaTools, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { DiPython, DiJava, DiHtml5, DiReact, DiJavascript1 } from "react-icons/di";
-import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss } from "react-icons/si";
+import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity } from "react-icons/si";
 import { useContext } from 'react';
 import { LanguageContext } from './context/LanguageContext';
 import ReactCountryFlag from 'react-country-flag';
@@ -135,6 +135,10 @@ const App = () => {
               <span className="px-1.5 py-0.5 bg-[#FF00FF] text-white rounded-[3px] font-bold flex items-center">
                 <SiAdobeaftereffects className="mr-2 text-xl" />
                 After Effects
+              </span>
+              <span className="px-1.5 py-0.5 bg-[#7e7e7e] text-white rounded-[3px] font-bold flex items-center">
+                <SiSolidity className="mr-2 text-xl" />
+                Solidity
               </span>
               <span className="px-1.5 py-0.5 bg-[#31A8FF] text-white rounded-[3px] font-bold flex items-center">
                 <SiAdobephotoshop className="mr-2 text-xl" />
