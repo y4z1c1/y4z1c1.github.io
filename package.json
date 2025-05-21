@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.3",
   "type": "module",
-  "homepage": "https://y4z1c1.github.io/yazici-cv",
+  "homepage": "https://y4z1c1.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
