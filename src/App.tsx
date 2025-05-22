@@ -1,5 +1,5 @@
 import './index.css';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaTools, FaGithub, FaLinkedin, FaTwitter, FaMoon, FaSun } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaTools, FaGithub, FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
 import { DiPython, DiJava, DiHtml5, DiReact, DiJavascript1 } from "react-icons/di";
 import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity } from "react-icons/si";
 import { useContext } from 'react';
@@ -189,14 +189,7 @@ const App = () => {
                 >
                   <FaLinkedin className="text-2xl" />
                 </a>
-                <a
-                  href="https://twitter.com/1nternSITY"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} transition-colors duration-200 flex items-center`}
-                >
-                  <FaTwitter className="text-2xl" />
-                </a>
+
               </div>
 
               <div className="flex items-center space-x-4">
