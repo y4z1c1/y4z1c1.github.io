@@ -116,67 +116,67 @@ const App = () => {
               {t('skills')}
             </h2>
             <div className="flex flex-wrap gap-4 items-center justify-items-center">
-              <span className="px-1.5 py-0.5 bg-[#3776AB] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <DiPython className="mr-2 text-xl" />
                 python
               </span>
-              <span className="px-1.5 py-0.5 bg-[#ED8B00] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <DiJava className="mr-2 text-xl" />
                 java
               </span>
-              <span className="px-1.5 py-0.5 bg-[#00599C] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiCplusplus className="mr-2 text-xl" />
                 c/c++
               </span>
-              <span className="px-1.5 py-0.5 bg-[#E34F26] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <DiHtml5 className="mr-2 text-xl" />
                 html/css
               </span>
-              <span className="px-1.5 py-0.5 bg-[#F7DF1E] text-black rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <DiJavascript1 className="mr-2 text-xl" />
                 javascript
               </span>
-              <span className="px-1.5 py-0.5 bg-[#3178C6] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiTypescript className="mr-2 text-xl" />
                 typescript
               </span>
-              <span className="px-1.5 py-0.5 bg-[#61DAFB] text-black rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <DiReact className="mr-2 text-xl" />
                 react
               </span>
-              <span className="px-1.5 py-0.5 bg-[#6B4C9F] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiSui className="mr-2 text-xl" />
                 move
               </span>
-              <span className="px-1.5 py-0.5 bg-[#FF0000] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiAdobepremierepro className="mr-2 text-xl" />
                 premiere pro
               </span>
-              <span className="px-1.5 py-0.5 bg-[#FF00FF] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiAdobeaftereffects className="mr-2 text-xl" />
                 after effects
               </span>
-              <span className="px-1.5 py-0.5 bg-[#7e7e7e] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiSolidity className="mr-2 text-xl" />
                 solidity
               </span>
-              <span className="px-1.5 py-0.5 bg-[#31A8FF] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiAdobephotoshop className="mr-2 text-xl" />
                 photoshop
               </span>
-              <span className="px-1.5 py-0.5 bg-[#38BDF8] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiTailwindcss className="mr-2 text-xl" />
                 tailwind css
               </span>
-              <span className="px-1.5 py-0.5 bg-[#515B7E] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiUnity className="mr-2 text-xl" />
                 unity
               </span>
-              <span className="px-1.5 py-0.5 bg-[#000000] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiDotnet className="mr-2 text-xl" />
                 c#
               </span>
-              <span className="px-1.5 py-0.5 bg-[#092E20] text-white rounded-[3px] font-bold flex items-center lowercase">
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiDjango className="mr-2 text-xl" />
                 django
               </span>
