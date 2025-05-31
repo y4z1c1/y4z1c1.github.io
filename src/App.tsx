@@ -213,9 +213,13 @@ const App = () => {
               <div className="flex items-center space-x-4">
                 <button
                   onClick={toggleTheme}
-                  className={`p-2 rounded-full ${theme === 'dark' ? 'text-yellow-400 hover:text-yellow-300' : 'text-gray-600 hover:text-gray-800'}`}
+                  className={`p-2 rounded-full ${theme === 'dark' ? 'text-white hover:text-gray-300' : 'text-black hover:text-gray-700'}`}
                 >
-                  <FaMoon style={{ width: '1.2em', height: '1.2em' }} />
+                  {theme === 'dark' ? (
+                    <FaSun style={{ width: '1.2em', height: '1.2em' }} />
+                  ) : (
+                    <FaMoon style={{ width: '1.2em', height: '1.2em' }} />
+                  )}
                 </button>
 
                 <button
