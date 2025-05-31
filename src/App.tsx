@@ -1,7 +1,7 @@
 import './index.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaTools, FaGithub, FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
 import { DiPython, DiJava, DiHtml5, DiReact, DiJavascript1 } from "react-icons/di";
-import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity, SiUnity, SiDotnet, SiDjango } from "react-icons/si";
+import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity, SiUnity, SiDotnet, SiDjango, SiMysql } from "react-icons/si";
 import { useContext } from 'react';
 import { LanguageContext } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
@@ -179,6 +179,10 @@ const App = () => {
               <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
                 <SiDjango className="mr-2 text-xl" />
                 django
+              </span>
+              <span className={`px-1.5 py-0.5 ${theme === 'dark' ? 'bg-gray-700 text-white' : 'bg-gray-200 text-black'} rounded-[3px] font-bold flex items-center lowercase`}>
+                <SiMysql className="mr-2 text-xl" />
+                mysql
               </span>
             </div>
           </section>
