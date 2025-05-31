@@ -1,7 +1,7 @@
 import './index.css';
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaGraduationCap, FaBriefcase, FaTools, FaGithub, FaLinkedin, FaMoon, FaSun } from "react-icons/fa";
 import { DiPython, DiJava, DiHtml5, DiReact, DiJavascript1 } from "react-icons/di";
-import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity } from "react-icons/si";
+import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffects, SiAdobephotoshop, SiTailwindcss, SiSolidity, SiUnity, SiDotnet, SiDjango } from "react-icons/si";
 import { useContext } from 'react';
 import { LanguageContext } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
@@ -14,16 +14,19 @@ const globalStyles = {
     fontFamily: 'var(--font-primary)',
     fontWeight: 'bold',
     fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+    textTransform: 'lowercase' as const,
   },
   subtitle: {
     fontFamily: 'var(--font-primary)',
     fontWeight: 'bold',
     fontSize: 'clamp(1rem, 3vw, 1.25rem)',
+    textTransform: 'lowercase' as const,
   },
   paragraph: {
     fontFamily: 'var(--font-primary)',
     fontWeight: 'normal',
     fontSize: 'clamp(0.75rem, 2vw, 0.875rem)',
+    textTransform: 'lowercase' as const,
   }
 };
 
@@ -33,17 +36,17 @@ const App = () => {
   const { t } = useTranslation();
 
   return (
-    <div className={`min-h-screen ${theme === 'dark' ? 'bg-black text-gray-100' : 'bg-white text-gray-900'} p-4 sm:p-6 transition-colors duration-200`}>
+    <div className={`min-h-screen ${theme === 'dark' ? 'bg-black text-gray-100' : 'bg-white text-gray-900'} p-4 sm:p-6`}>
       <div className="max-w-2xl mx-auto">
         <div className="w-full space-y-4">
           {/* Header section */}
-          <header className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-3 rounded-[3px] transition-colors duration-200`}>
+          <header className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-3 rounded-[3px]`}>
             <div className='flex flex-col items-center space-y-4'>
               <div className="flex flex-row items-center justify-center space-x-4">
                 <div className="avatar h-8 w-8 bg-gray-600 rounded-full overflow-hidden">
                   <img src="https://avatars.githubusercontent.com/u/56488393?v=4" alt="Profile" />
                 </div>
-                <h1 style={globalStyles.title}>Yusuf Anıl Yazıcı</h1>
+                <h1 style={globalStyles.title}>yusuf anıl yazıcı</h1>
               </div>
 
               <div className={`text-center ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'} flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4`}>
@@ -57,7 +60,7 @@ const App = () => {
                 </span>
                 <span className="flex items-center" style={globalStyles.paragraph}>
                   <FaEnvelope className="mr-2" />
-                  <a href="mailto:yusufanilyazici@gmail.com" className={`${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'} transition-colors`}>
+                  <a href="mailto:yusufanilyazici@gmail.com" className={`${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'}`}>
                     yusufanilyazici@gmail.com
                   </a>
                 </span>
@@ -66,7 +69,7 @@ const App = () => {
           </header>
 
           {/* Education Section */}
-          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px] transition-colors duration-200`}>
+          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px]`}>
             <h2 style={globalStyles.subtitle} className="mb-4 flex items-center">
               <FaGraduationCap className="mr-2" />
               {t('education')}
@@ -80,7 +83,7 @@ const App = () => {
           </section>
 
           {/* Experience Section */}
-          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px] transition-colors duration-200`}>
+          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px]`}>
             <h2 style={globalStyles.subtitle} className="mb-4 flex items-center">
               <FaBriefcase className="mr-2" />
               {t('experience')}
@@ -88,7 +91,7 @@ const App = () => {
             <ul className="list-disc list-inside space-y-4">
               <li style={globalStyles.paragraph}>
                 <strong>
-                  <a href="https://suicityp2e.com" target="_blank" rel="noopener noreferrer" className={`${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'} mr-1 transition-colors`}>
+                  <a href="https://suicityp2e.com" target="_blank" rel="noopener noreferrer" className={`${theme === 'dark' ? 'text-blue-400 hover:text-blue-300' : 'text-blue-600 hover:text-blue-500'} mr-1`}>
                     {t('suiCityRole')}
                   </a>
                 </strong>{t('suiCityDate')}
@@ -107,77 +110,88 @@ const App = () => {
           </section>
 
           {/* Skills Section */}
-          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-6 rounded-[3px] overflow-hidden transition-colors duration-200`}>
+          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-6 rounded-[3px] overflow-hidden`}>
             <h2 style={globalStyles.subtitle} className="mb-4 flex items-center">
               <FaTools className="mr-2" />
               {t('skills')}
             </h2>
             <div className="flex flex-wrap gap-4 items-center justify-items-center">
-              <span className="px-1.5 py-0.5 bg-[#3776AB] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#3776AB] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <DiPython className="mr-2 text-xl" />
-                Python
+                python
               </span>
-              <span className="px-1.5 py-0.5 bg-[#ED8B00] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#ED8B00] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <DiJava className="mr-2 text-xl" />
-                Java
+                java
               </span>
-              <span className="px-1.5 py-0.5 bg-[#00599C] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#00599C] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiCplusplus className="mr-2 text-xl" />
-                C/C++
+                c/c++
               </span>
-              <span className="px-1.5 py-0.5 bg-[#E34F26] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#E34F26] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <DiHtml5 className="mr-2 text-xl" />
-                HTML/CSS
+                html/css
               </span>
-              <span className="px-1.5 py-0.5 bg-[#F7DF1E] text-black rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#F7DF1E] text-black rounded-[3px] font-bold flex items-center lowercase">
                 <DiJavascript1 className="mr-2 text-xl" />
-                Javascript
+                javascript
               </span>
-              <span className="px-1.5 py-0.5 bg-[#3178C6] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#3178C6] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiTypescript className="mr-2 text-xl" />
-                Typescript
+                typescript
               </span>
-              <span className="px-1.5 py-0.5 bg-[#61DAFB] text-black rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#61DAFB] text-black rounded-[3px] font-bold flex items-center lowercase">
                 <DiReact className="mr-2 text-xl" />
-                React
+                react
               </span>
-              <span className="px-1.5 py-0.5 bg-[#6B4C9F] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#6B4C9F] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiSui className="mr-2 text-xl" />
-                Move
+                move
               </span>
-              <span className="px-1.5 py-0.5 bg-[#FF0000] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#FF0000] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiAdobepremierepro className="mr-2 text-xl" />
-                Premiere Pro
+                premiere pro
               </span>
-              <span className="px-1.5 py-0.5 bg-[#FF00FF] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#FF00FF] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiAdobeaftereffects className="mr-2 text-xl" />
-                After Effects
+                after effects
               </span>
-              <span className="px-1.5 py-0.5 bg-[#7e7e7e] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#7e7e7e] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiSolidity className="mr-2 text-xl" />
-                Solidity
+                solidity
               </span>
-              <span className="px-1.5 py-0.5 bg-[#31A8FF] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#31A8FF] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiAdobephotoshop className="mr-2 text-xl" />
-                Photoshop
+                photoshop
               </span>
-              <span className="px-1.5 py-0.5 bg-[#38BDF8] text-white rounded-[3px] font-bold flex items-center">
+              <span className="px-1.5 py-0.5 bg-[#38BDF8] text-white rounded-[3px] font-bold flex items-center lowercase">
                 <SiTailwindcss className="mr-2 text-xl" />
-                Tailwind CSS
+                tailwind css
               </span>
-
+              <span className="px-1.5 py-0.5 bg-[#515B7E] text-white rounded-[3px] font-bold flex items-center lowercase">
+                <SiUnity className="mr-2 text-xl" />
+                unity
+              </span>
+              <span className="px-1.5 py-0.5 bg-[#000000] text-white rounded-[3px] font-bold flex items-center lowercase">
+                <SiDotnet className="mr-2 text-xl" />
+                c#
+              </span>
+              <span className="px-1.5 py-0.5 bg-[#092E20] text-white rounded-[3px] font-bold flex items-center lowercase">
+                <SiDjango className="mr-2 text-xl" />
+                django
+              </span>
             </div>
           </section>
 
           {/* Social Links Section */}
-          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px] transition-colors duration-200`}>
+          <section className={`${theme === 'dark' ? 'bg-neutral-900' : 'bg-gray-50'} p-4 rounded-[3px]`}>
             <div className="flex justify-between items-center">
               <div className="flex space-x-6">
                 <a
                   href="https://github.com/y4z1c1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} transition-colors duration-200 flex items-center`}
+                  className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} flex items-center`}
                 >
                   <FaGithub className="text-2xl" />
                 </a>
@@ -185,7 +199,7 @@ const App = () => {
                   href="https://www.linkedin.com/in/y4z1c1/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} transition-colors duration-200 flex items-center`}
+                  className={`${theme === 'dark' ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-black'} flex items-center`}
                 >
                   <FaLinkedin className="text-2xl" />
                 </a>
@@ -195,13 +209,13 @@ const App = () => {
               <div className="flex items-center space-x-4">
                 <button
                   onClick={toggleTheme}
-                  className={`p-2 rounded-full ${theme === 'dark' ? 'text-yellow-400 hover:text-yellow-300' : 'text-gray-600 hover:text-gray-800'} transition-colors duration-200`}
+                  className={`p-2 rounded-full ${theme === 'dark' ? 'text-yellow-400 hover:text-yellow-300' : 'text-gray-600 hover:text-gray-800'}`}
                 >
                   {theme !== 'dark' ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
                 </button>
 
                 <button
-                  className="text-2xl rounded-full transition-colors duration-200"
+                  className="text-2xl rounded-full"
                   onClick={() => setLanguage(language === 'en' ? 'tr' : 'en')}
                 >
                   <ReactCountryFlag
