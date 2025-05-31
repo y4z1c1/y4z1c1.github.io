@@ -9,7 +9,7 @@ export const translations = {
     suiCityRole: "Blockchain Developer, SuiCityP2E",
     suiCityDate: " (Aug 2024 - Present)",
     suiCityDescription:
-      "Led the development of SuiCityP2E, a play-to-earn blockchain game with engaging gameplay and seamless user experience. Designed a rewards system for earning and upgrading in-game assets, boosting player engagement. Developed secure smart contracts for game mechanics and reliable player transactions. Built a user-friendly web application for asset management and reward claiming. Ensured scalability and stability to support high player activity and transaction volumes.",
+      "developed the suicity game, a play-to-earn blockchain game with engaging gameplay mechanics. created a complete full-stack solution including frontend built with vite, react, and typescript, backend using node.js and mongodb for user management and game data. wrote comprehensive smart contracts in sui move language that handle all in-game mechanics, transactions, asset ownership, and monetary systems. managed complete devops pipeline including deployment, monitoring, and infrastructure management to ensure scalability and reliability.",
     freelanceRole: "Freelance Fullstack Developer",
     freelanceDate: " (Sep 2022 - May 2024)",
     freelanceDescription:
@@ -25,7 +25,7 @@ export const translations = {
     suiCityRole: "Blockchain Geliştiricisi, SuiCityP2E",
     suiCityDate: " (Ağustos 2024 - Günümüz)",
     suiCityDescription:
-      "SuiCityP2E'nin, sürükleyici oyun deneyimi ve sorunsuz kullanıcı deneyimi sunan bir oyna-kazan blockchain oyununun geliştirilmesine liderlik ettim. Oyun içi varlıkların kazanılması ve yükseltilmesi için ödül sistemi tasarladım. Oyun mekanikleri ve güvenilir oyuncu işlemleri için güvenli akıllı sözleşmeler geliştirdim. Varlık yönetimi ve ödül talepleri için kullanıcı dostu bir web uygulaması oluşturdum. Yüksek oyuncu aktivitesini ve işlem hacimlerini desteklemek için ölçeklenebilirlik ve stabilite sağladım.",
+      "sürükleyici oyun mekaniği olan oyna-kazan blockchain oyunu suicity'yi geliştirdim. vite, react ve typescript ile frontend, kullanıcı yönetimi ve oyun verileri için node.js ve mongodb ile backend dahil olmak üzere tam yığın çözüm oluşturdum. oyun içi mekanikleri, işlemleri, varlık sahipliğini ve parasal sistemleri yöneten kapsamlı akıllı sözleşmeleri sui move dilinde yazdım. ölçeklenebilirlik ve güvenilirlik sağlamak için dağıtım, izleme ve altyapı yönetimi dahil tam devops pipeline'ını yönettim.",
     freelanceRole: "Serbest Fullstack Geliştirici",
     freelanceDate: " (Eylül 2022 - Mayıs 2024)",
     freelanceDescription:

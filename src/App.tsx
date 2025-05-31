@@ -211,7 +211,7 @@ const App = () => {
                   onClick={toggleTheme}
                   className={`p-2 rounded-full ${theme === 'dark' ? 'text-yellow-400 hover:text-yellow-300' : 'text-gray-600 hover:text-gray-800'}`}
                 >
-                  {theme !== 'dark' ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
+                  <FaMoon style={{ width: '1.2em', height: '1.2em' }} />
                 </button>
 
                 <button
