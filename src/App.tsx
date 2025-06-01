@@ -225,18 +225,13 @@ const App = () => {
                 <button
                   className="text-2xl rounded-full"
                   onClick={() => setLanguage(language === 'en' ? 'tr' : 'en')}
+                  style={{ width: '1.2em', height: '1.2em', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                 >
-                  <ReactCountryFlag
-                    countryCode={language === 'en' ? 'US' : 'TR'}
-                    svg
-                    style={{
-                      width: '1.2em',
-                      height: '1.2em',
-                      borderRadius: '10%',
-                      objectFit: 'cover',
-                      border: `2px solid ${theme === 'dark' ? '#4B5563' : '#374151'}`
-                    }}
-                  />
+                  <span className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+                    <span className={language === 'en' ? 'font-bold' : 'font-normal'}>en</span>
+                    <span className="mx-1">|</span>
+                    <span className={language === 'tr' ? 'font-bold' : 'font-normal'}>tr</span>
+                  </span>
                 </button>
               </div>
             </div>
