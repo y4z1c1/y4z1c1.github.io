@@ -5,7 +5,6 @@ import { SiCplusplus, SiTypescript, SiSui, SiAdobepremierepro, SiAdobeaftereffec
 import { useContext } from 'react';
 import { LanguageContext } from './context/LanguageContext';
 import { useTheme } from './context/ThemeContext';
-import ReactCountryFlag from 'react-country-flag';
 import { useTranslation } from './hooks/useTranslation';
 
 // add global styles
