@@ -13,7 +13,8 @@ const App = () => {
 
   return (
     <main>
-      <table style={{
+      <div className="table-scroll" style={{ overflowX: 'auto' }}>
+      <table className="contact-table" style={{
         width: '100%',
         borderCollapse: 'collapse',
         marginBottom: 'calc(var(--line-height) * 2)'
@@ -28,99 +29,89 @@ const App = () => {
               <h1 style={{ margin: 0, fontSize: '1.5rem', fontWeight: 'bold' }}>yusuf anıl yazıcı</h1>
               <span style={{ fontSize: '1rem' }}>computer engineer</span>
             </td>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               <FaMapMarkerAlt /> Location
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content'
             }}>
               {t('location')}
             </td>
           </tr>
           <tr>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               <FaPhone /> Phone
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content'
             }}>
               +90 501 061 89 75
             </td>
           </tr>
           <tr>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               <FaEnvelope /> Email
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
               width: 'auto'
             }}>
               <a href="mailto:yusufanilyazici@gmail.com">yusufanilyazici@gmail.com</a>
             </td>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               <FaGithub /> GitHub
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content'
             }}>
               <a href="https://github.com/y4z1c1" target="_blank" rel="noopener noreferrer">y4z1c1</a>
             </td>
           </tr>
           <tr>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               <FaLinkedin /> LinkedIn
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
               width: 'auto'
             }}>
               <a href="https://www.linkedin.com/in/y4z1c1/" target="_blank" rel="noopener noreferrer">y4z1c1</a>
             </td>
-            <th style={{ 
+            <th className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content',
               textAlign: 'left'
             }}>
               CV
             </th>
-            <td style={{ 
+            <td className="hide-on-mobile" style={{ 
               padding: '0.5rem', 
               border: 'var(--border-thickness) solid var(--text-color)',
-              width: 'min-content'
             }}>
               <a 
                 href="/resume-yusuf-anil-yazici.pdf" 
@@ -137,6 +128,7 @@ const App = () => {
           </tr>
         </tbody>
       </table>
+      </div>
 
       <section>
         <h2><FaGraduationCap /> {t('education')}</h2>
@@ -264,6 +256,23 @@ const App = () => {
             </tr>
           </tbody>
         </table>
+      </section>
+
+      {/* Social links section below skills (mobile only) */}
+      <section className="mobile-contacts" style={{
+        borderTop: 'var(--border-thickness) solid var(--text-color)',
+        paddingTop: 'calc(var(--line-height) * 1.5)',
+        marginTop: 'calc(var(--line-height) * 1.5)'
+      }}>
+        <h2>Contact</h2>
+        <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+          <li style={{ marginTop: '0.5rem' }}><FaMapMarkerAlt /> {t('location')}</li>
+          <li style={{ marginTop: '0.5rem' }}><FaPhone /> +90 501 061 89 75</li>
+          <li style={{ marginTop: '0.5rem' }}><FaEnvelope /> <a href="mailto:yusufanilyazici@gmail.com">yusufanilyazici@gmail.com</a></li>
+          <li style={{ marginTop: '0.5rem' }}><FaGithub /> <a href="https://github.com/y4z1c1" target="_blank" rel="noopener noreferrer">y4z1c1</a></li>
+          <li style={{ marginTop: '0.5rem' }}><FaLinkedin /> <a href="https://www.linkedin.com/in/y4z1c1/" target="_blank" rel="noopener noreferrer">y4z1c1</a></li>
+          <li style={{ marginTop: '0.5rem' }}><FaDownload /> <a href="/resume-yusuf-anil-yazici.pdf" download="yusuf-anil-yazici-cv.pdf">Download CV</a></li>
+        </ul>
       </section>
 
       <footer style={{ 
