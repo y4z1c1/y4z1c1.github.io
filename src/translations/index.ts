@@ -11,7 +11,7 @@ export const translations = {
     turkishTechDescription:
       "Developing full-stack web applications using Java Spring for backend development and Vue.js for frontend interfaces. Contributing to enterprise-level software solutions while maintaining high code quality and performance standards. Collaborating with cross-functional teams to deliver scalable and maintainable software solutions.",
     riskOptimaRole: "Software Developer, RiskOptima WealthTech Corp.",
-    riskOptimaDate: " (Jul 2025 - Present)",
+    riskOptimaDate: " (Jul 2025 - Oct 2025)",
     riskOptimaDescription:
       "Developed algorithmic trading algorithms and machine learning models for financial markets. Started as an intern and was promoted to Software Developer. Built automated trading systems, implemented risk management algorithms, and created data analysis tools for wealth management solutions.",
     suiCityRole: "Blockchain Developer, SuiCityP2E",
@@ -36,7 +36,7 @@ export const translations = {
     turkishTechDescription:
       "Backend geliştirme için Java Spring ve frontend arayüzleri için Vue.js kullanarak full-stack web uygulamaları geliştiriyorum. Yüksek kod kalitesi ve performans standartlarını korurken kurumsal düzeyde yazılım çözümlerine katkıda bulunuyorum. Ölçeklenebilir ve sürdürülebilir yazılım çözümleri sunmak için çapraz fonksiyonel ekiplerle işbirliği yapıyorum.",
     riskOptimaRole: "Yazılım Geliştirici, RiskOptima WealthTech Corp.",
-    riskOptimaDate: " (Temmuz 2025 - Günümüz)",
+    riskOptimaDate: " (Temmuz 2025 - Ekim 2025)",
     riskOptimaDescription:
       "Finansal piyasalar için algoritmik ticaret algoritmaları ve makine öğrenmesi modelleri geliştirdim. Stajyer olarak başlayıp Yazılım Geliştirici olarak terfi ettim. Otomatik ticaret sistemleri kurdum, risk yönetimi algoritmaları uyguladım ve varlık yönetimi çözümleri için veri analizi araçları oluşturdum.",
     suiCityRole: "Blockchain Geliştiricisi, SuiCityP2E",
