@@ -75,6 +75,12 @@ const App = () => {
               </h2>
               <ul className="list-disc list-inside space-y-4">
                 <li>
+                  <strong>{t('turkishTechRole')}</strong>{t('turkishTechDate')}
+                  <p className="text-gray-400 mt-2">
+                    {t('turkishTechDescription')}
+                  </p>
+                </li>
+                <li>
                   <strong>
                     <a href="https://suicityp2e.com" target="_blank" rel="noopener noreferrer" className='mr-1'>
                       {t('suiCityRole')}
